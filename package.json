@@ -1,0 +1,29 @@
+{
+  "name": "ex_socketio",
+  "version": "0.0.1",
+  "description": "express application using socket io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doron2402/ex_socketio.git"
+  },
+  "keywords": [
+    "socket.io",
+    "express",
+    "node.js"
+  ],
+  "author": "Doron Segal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doron2402/ex_socketio/issues"
+  },
+  "homepage": "https://github.com/doron2402/ex_socketio",
+  "dependencies": {
+    "express": "~3.4.7",
+    "socket.io": "~0.9.16"
+  }
+}
