@@ -32,15 +32,19 @@ app.use(function (req, res, next) {
 
 app.use(express.static(root));
 
-function createWatcher(file, event){
+function createWatcher(file, ev){
 	var absolute = path.join(root, file);
 
+	console.log(absolute);
+	
 	if (watchers[absolute])
 		return;
 
 	fs.watchFile(absolute, function(curr, prev){
 		if (curr.mtime !== prev.mtime){
-			io.sockets.emit(event, file);
+			console.log('...........createWatcher..........');
+			console.log(ev);
+			io.sockets.emit(ev, file);
 
 		}
 	});
